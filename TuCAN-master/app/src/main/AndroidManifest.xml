@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="moca.clockdraw">
+
+    <!-- The following permissions are needed by the SAMSUNG SPen SDK: -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainMenu"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TasksMenue"
+            android:configChanges="orientation"
+            android:label="Aufgaben Übersicht"
+            android:parentActivityName=".MainMenu"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".zeichnenUeben"
+            android:configChanges="orientation"
+            android:label="Zeichnen Üben"
+            android:noHistory="true"
+            android:parentActivityName=".MainMenu"/>
+        <activity
+            android:name=".tremoranalyse1"
+            android:configChanges="orientation"
+            android:label="Tremoranalyse 1"
+            android:noHistory="true"
+            android:parentActivityName=".MainMenu"/>
+        <activity
+            android:name=".tremoranalyse2"
+            android:configChanges="orientation"
+            android:label="Tremoranalyse 2"
+            android:noHistory="true"
+            android:parentActivityName=".MainMenu"/>
+        <activity
+            android:name=".task1"
+            android:configChanges="orientation"
+            android:label="Aufgabe 1"
+            android:noHistory="true"
+            android:parentActivityName=".MainMenu"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".task2"
+            android:configChanges="orientation"
+            android:label="Aufgabe 2"
+            android:noHistory="true"/>
+        <activity
+            android:name=".task3"
+            android:configChanges="orientation"
+            android:label="Aufgabe 3"
+            android:noHistory="true"
+            android:parentActivityName=".MainMenu"/>
+        <activity
+            android:name=".PersonenDaten"
+            android:configChanges="orientation"
+            android:label="Personen Daten"
+            android:parentActivityName=".MainMenu"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".DatenAnalyse"
+            android:configChanges="orientation"
+            android:label="Daten Analyse"
+            android:parentActivityName=".MainMenu"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".showTask"
+            android:configChanges="orientation"
+            android:label="Replay anzeigen"
+            android:parentActivityName=".DatenAnalyse"/>
+        <activity
+            android:name=".DialogLayout"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".CubeRecognitionResult"
+            android:configChanges="orientation"
+            android:parentActivityName=".DatenAnalyse"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".ClockRecognitionResult"
+            android:configChanges="orientation"
+            android:label="Uhrentest: Automatische Auswertung"
+            android:parentActivityName=".DatenAnalyse"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".InfoWebView"
+            android:label="@string/title_activity_info_web_view"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

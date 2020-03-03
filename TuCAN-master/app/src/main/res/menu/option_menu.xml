@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tabletOptimizedSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/tabletOptimized"
+        android:checkable="true"
+        android:checked="false"/>
+    <item
+        android:id="@+id/startAbout"
+        android:title="@string/aboutString"
+        />
+
+</menu>

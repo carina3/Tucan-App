@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/groundLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/simpleGrey">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/taskLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/spenViewLayout"
+            android:layout_width="70mm"
+            android:layout_height="70mm"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            tools:ignore="InOrMmUsage"> <!-- Height = Total height - height of task text -->
+
+        </LinearLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:padding="5dp"
+                android:text="@string/text_showtask_back"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="12pt"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:id="@+id/timeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="12pt"
+                android:textAlignment="center"
+                android:text="@string/cumulative_time_init_value"
+                android:layout_centerInParent="true"
+                />
+
+            <Button
+                android:id="@+id/replayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_gravity="right"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:padding="5dp"
+                android:text="@string/text_showtask_replay"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="12pt"
+                android:textColor="@color/white"
+                tools:ignore="ButtonStyle"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

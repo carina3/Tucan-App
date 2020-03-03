@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:columnCount="3"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:rowCount="2"
+    android:layout_gravity="center"
+    android:padding="2dp"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimaryLight">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/task_zeichnenUeben"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        app:cardElevation="5dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:src="@drawable/stift"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/text_tasksmenue_zeichnenUeben"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="11pt"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/task_tremor1"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        app:cardElevation="5dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:src="@drawable/spirale"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/text_tasksmenue_tremranalyseteil1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="11pt"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/task_tremor2"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:background="@color/white"
+        app:cardElevation="5dp"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:src="@drawable/spirale"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/text_tasksmenue_tremranalyseteil2"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="11pt"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/task_drawPath"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:background="@color/white"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/pfad_iv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                android:src="@drawable/tmt2" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/text_tasksmenue_pfadverbinden"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="11pt"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/task_drawCube"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:background="@color/white"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/form_iv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                android:src="@drawable/wuerfel" />
+
+            <TextView
+                android:id="@+id/aufgabe_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_tasksmenue_wuerfelzeichnen"
+                android:textAlignment="center"
+                android:textSize="11pt" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/task_drawClock"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/uhr_iv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                android:src="@drawable/ic_icons8_clock" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@string/text_tasksmenue_uhrzeichnen"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="11pt"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</GridLayout>
+

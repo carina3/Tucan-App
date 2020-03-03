@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/groundLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/simpleGrey">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:text="@string/text_tremor1_reset"
+            android:textAlignment="center"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            tools:ignore="ButtonStyle" />
+
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:text="@string/text_tremor1_fertig"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/taskLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/form_iv"
+                android:layout_width="20mm"
+                android:layout_height="20mm"
+                android:layout_weight="0.5"
+                android:background="@color/white"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                android:src="@drawable/wuerfel"
+                tools:ignore="InOrMmUsage" />
+
+            <TextView
+                android:id="@+id/aufgabe_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingTop="30dp"
+                android:text="@string/text_cubeCopy_opti"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14pt" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/spenViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"> <!-- Height = Total height - height of task text -->
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

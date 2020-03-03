@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">MOCApp</string>
+    <string name="test_textValue">Eingabe bitte</string>
+    <string name="simple_button_label">Bestätigen</string>
+    <string name="title_activity_navi">navi</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="dummyText">Dummy</string>
+    <string name="text_clockDraw">Eine Uhr zeichnen (Zehn nach elf)</string>
+    <string name="text_cubeCopy">Würfel\n nach-\n zeichnen</string>
+    <string name="text_quaderCopy">Quader\n nach-\n zeichnen</string>
+    <string name="text_zylinderCopy">Zylinder\n nach-\n zeichnen</string>
+    <string name="text_cubeCopy_opti">Würfel nachzeichnen</string>
+    <string name="text_quaderCopy_opti">Quader nachzeichnen</string>
+    <string name="text_zylinderCopy_opti">Zylinder nachzeichnen</string>
+    <string name="text_tremor1">Zeichnen Sie eine Spirale</string>
+    <string name="text_tremor2">Spirale\n nach-\n zeichnen</string>
+    <string name="text_tremor2_opti">Spirale nachzeichnen</string>
+    <string name="tabletOptimized">Für Tablet optimieren</string>
+
+    <string name="text_datenanalyse_vorname"> <b>Vorname</b> </string>
+    <string name="text_datenanalyse_nachname"><b>Nachname</b></string>
+    <string name="text_datenanalyse_vpnummer"><b>VP-Nummer</b></string>
+    <string name="text_datenanalyse_alter"><b>Alter</b></string>
+    <string name="text_datenanalyse_bildung"><b>Bildung</b></string>
+    <string name="text_datenanalyse_geschlecht"><b>Geschlecht</b></string>
+    <string name="text_datenanalyse_haendigkeit"><b>Händigkeit</b></string>
+    <string name="text_datenanalyse_sehhilfe"><b>Sehhilfe</b></string>
+    <string name="text_datenanalyse_umgeschult"><b>Umgeschult</b></string>
+    <string name="text_datenanalyse_datum"><b>Datum u. Zeit</b></string>
+    <string name="text_datenanalyse_aufgabe"><b>Aufgabe</b></string>
+    <string name="text_datenanalyse_gesamtzeit"><b>Gesamtzeit</b></string>
+    <string name="text_datenanalyse_amueberlegen"><b>In der Luft</b></string>
+    <string name="text_datenanalyse_amzeichnen"><b>Am Zeichnen</b></string>
+    <string name="text_datenanalyse_abgelenkt"><b>Weg vom Gerät</b></string>
+    <string name="text_datenanalyse_mittleredruckstaerke"><b>Mittlere Druckstärke</b></string>
+    <string name="text_datenanalyse_replayanzeigen">Replay Anzeigen</string>
+    <string name="text_datenanalyse_task1"><b>Pfad</b></string>
+    <string name="text_datenanalyse_task2"><b>Würfel</b></string>
+    <string name="text_datenanalyse_task3"><b>Uhr</b></string>
+    <string name="text_datenanalyse_tremoranalyse1">Spirale zeichnen 1</string>
+    <string name="text_datenanalyse_tremoranalyse2">Spirale zeichnen 2</string>
+    <string name="text_datenanalyse_vorschaubild">Vorschaubild</string>
+    <string name="text_datenanalyse_laden">Laden</string>
+
+    <string name="text_tremor1_reset">Reset</string>
+    <string name="text_tremor1_fertig">Fertig</string>
+
+    <string name="text_personendaten_umgeschultaufrechts"><b>Umgeschult auf Rechts</b></string>
+    <string name="text_personendaten_maennlich">Männlich</string>
+    <string name="text_personendaten_weiblich">weiblich</string>
+    <string name="text_personendaten_rechts">Rechts</string>
+    <string name="text_personendaten_links">Links</string>
+    <string name="text_personendaten_umgeschult">Umgeschult</string>
+    <string name="text_personendaten_nichtumgeschult">Nicht Umgeschult</string>
+    <string name="text_ja">Ja</string>
+    <string name="text_nein">Nein</string>
+    <string name="text_MCI"><b>MCI</b></string>
+    <string name="text_betreuer"><b>Untersucher</b></string>
+    <string name="text_personendaten_bildung"><b>Bildungsjahre</b></string>
+    <string name="text_tasksmenue_tremranalyseteil1">Spirale zeichnen 1</string>
+    <string name="text_tasksmenue_zeichnenUeben">Zeichnen Üben</string>
+    <string name="text_tasksmenue_tremranalyseteil2">Spirale zeichnen 2</string>
+    <string name="text_tasksmenue_pfadverbinden">Pfad verbinden</string>
+    <string name="text_tasksmenue_wuerfelzeichnen">Würfel zeichnen</string>
+    <string name="text_tasksmenue_uhrzeichnen">Uhr zeichnen</string>
+
+    <string name="text_draw_save">Uhr zeichnen</string>
+
+    <string name="text_mainmenu_teststarten">Test Starten</string>
+    <string name="text_mainmenu_datenanalysieren">Daten Analysieren</string>
+
+    <string name="text_showtask_back">Zurück</string>
+    <string name="text_showtask_replay">Replay</string>
+
+    <string name="text_dialog_parentfolder">Parent Folder</string>
+
+    <string name="text_dialog_versuchsperosnauswaehlen">Versuchsperson auswählen</string>
+
+    <string name="vpNumberAlertMessage">Eine Person mit dieser Versuchspersonennummer existiert bereits.</string>
+    <string name="vpNumberAlertTitle">Person bereits vorhanden</string>
+    <string name="vpNumberPosButton">Erneut testen</string>
+    <string name="vpNumberNeutButton">Abbrechen</string>
+    <string name="vpNumberNegButton">Alles Überschreiben</string>
+    <string name="empty_string"/>
+    <string name="cumulative_time_init_value">0 ms</string>
+    <string name="cdt_time_version_2">Fünf nach vier</string>
+    <string name="cdt_time_version_3">Zehn nach neun</string>
+    <string name="cdt_time_version_1">Zehn nach elf</string>
+    <string name="cdt_time_version_manual">Manuell:</string>
+    <string name="cdt_manual_input_hint">Uhrzeit eingeben</string>
+    <string name="start_clock_recognition">Autom. Auswertung</string>
+    <string name="aboutString">Info</string>
+    <string name="title_activity_info_web_view">InfoWebView</string>
+
+</resources>

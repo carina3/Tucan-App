@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#c5cae9</color>
+    <color name="colorAccent">#FFEB3B</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="simpleGrey">#9f9b9b</color>
+    <color name="activeGreen">#7ade22</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="hoverGray">#E6E6E6</color>
+    <color name="hoverRed">#2fff0000</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/groundLayout_task1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/simpleGrey">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/buttonsLayout_task1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:text="Reset"
+            android:textAlignment="center"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:text="Fertig"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/task1Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/spenViewLayout"
+            android:layout_width="70mm"
+            android:layout_height="70mm"
+            android:layout_margin="100dp"
+            android:orientation="vertical">
+            <!--
+            android:backgroundTintMode="screen"
+            android:background="@drawable/tmt2"> --> <!-- Height = Total height - height of task text -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="moca.clockdraw.DatenAnalyse"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/vpDaten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <Button
+                android:id="@+id/opendialog"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/text_datenanalyse_laden" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/vorname_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minLines="2"
+                    android:text="@string/text_datenanalyse_vorname"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/sehschwaeche_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minLines="2"
+                    android:text="@string/text_datenanalyse_sehhilfe"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/nachname_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minLines="2"
+                    android:text="@string/text_datenanalyse_nachname"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/mci_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minLines="2"
+                    android:text="@string/text_MCI"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/vpnummer_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minLines="2"
+                    android:text="@string/text_datenanalyse_vpnummer"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/betreuer_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minLines="2"
+                    android:text="@string/text_betreuer"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/alter_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/text_datenanalyse_alter"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/bildung_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/text_datenanalyse_bildung"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/geschlecht_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/text_datenanalyse_geschlecht"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/händigkeit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/text_datenanalyse_haendigkeit"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/umgeschult_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/text_datenanalyse_umgeschult"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/datum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="@string/text_datenanalyse_datum"
+                android:textAlignment="center"
+
+                />
+
+        </LinearLayout>
+
+
+            <TextView
+            android:id="@+id/kommentar_untersucher_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+            android:minLines="1"
+                android:text="Kommentar:"
+                android:textStyle="bold"
+            android:orientation="vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/kommentar_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customborder"
+                android:hint="Hier können Sie einen Kommentar schreiben"
+                android:minLines="5"
+                android:maxLines="5"
+                android:scrollbars = "vertical"
+                android:inputType="textMultiLine"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/radiotabelle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent" />
+
+        <!--android:background="#a40404" -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customborder"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryLight"
+                android:freezesText="false"
+                android:text="@string/text_datenanalyse_aufgabe"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines"
+                android:text="@string/text_datenanalyse_gesamtzeit"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines"
+                android:text="@string/text_datenanalyse_amueberlegen"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines"
+                android:text="@string/text_datenanalyse_amzeichnen"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines"
+                android:text="@string/text_datenanalyse_abgelenkt"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines"
+                android:text="@string/text_datenanalyse_mittleredruckstaerke"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/taskLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/tremoranalyse1_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_datenanalyse_tremoranalyse1" />
+
+                    <ImageView
+                        android:id="@+id/tremor1_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/customborder"
+                        android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                        android:src="@drawable/ic_empty_set_mathematical_symbol"
+                        tools:ignore="InOrMmUsage" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/taskLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/tremoranalyse2_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_datenanalyse_tremoranalyse2" />
+
+                    <ImageView
+                        android:id="@+id/tremor2_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/customborder"
+                        android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                        android:src="@drawable/ic_empty_set_mathematical_symbol"
+                        tools:ignore="InOrMmUsage" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/customborder"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task1_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryLight"
+                android:freezesText="false"
+                android:text="@string/text_datenanalyse_task1"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task1_globalStart_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task1_timeInAir_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task1_timeOnSurface_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task1_globalDuration_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task1_druckstaerke_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/task1_iv"
+                android:layout_width="match_parent"
+                android:layout_height="25mm"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                android:src="@drawable/ic_empty_set_mathematical_symbol"
+                tools:ignore="InOrMmUsage" />
+
+            <Button
+                android:id="@+id/replay_task1_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_datenanalyse_replayanzeigen"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/customborder"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task2_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryLight"
+                android:freezesText="false"
+                android:text="@string/text_datenanalyse_task2"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task2_globalStart_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task2_timeInAir_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task2_timeOnSurface_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task2_globalDuration_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task2_druckstaerke_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/task2_iv"
+                android:layout_width="match_parent"
+                android:layout_height="25mm"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                android:src="@drawable/ic_empty_set_mathematical_symbol"
+                tools:ignore="InOrMmUsage" />
+
+            <Button
+                android:id="@+id/replay_task2_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_datenanalyse_replayanzeigen"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/ki_task2_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autom. Auswertung"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/customborder"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task3_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryLight"
+                android:freezesText="false"
+                android:text="@string/text_datenanalyse_task3"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task3_globalStart_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task3_timeInAir_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task3_timeOnSurface_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task3_globalDuration_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/task3_druckstaerke_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/textlines"
+                android:text="@string/empty_string"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/task3_iv"
+                android:layout_width="match_parent"
+                android:layout_height="25mm"
+                android:contentDescription="@string/text_datenanalyse_vorschaubild"
+                android:src="@drawable/ic_empty_set_mathematical_symbol"
+                tools:ignore="InOrMmUsage" />
+
+            <Button
+                android:id="@+id/replay_task3_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_datenanalyse_replayanzeigen"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/cdt_start_recognition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_clock_recognition"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
